@@ -25,3 +25,9 @@
 hs_err_pid*
 
 /.idea/
+/microservciecloud-provider-dept-8001/microservciecloud-provider-dept-8001.iml
+/microservicecloud-api/microservicecloud-api.iml
+/microservicecloud-eureka-7003/microservicecloud-eureka-7003.iml
+/microservicecloud-consumer-dept-80/microservicecloud-consumer-dept-80.iml
+/microservicecloud-eureka-7004/microservicecloud-eureka-7004.iml
+/microservicecloud-eureka-7005/microservicecloud-eureka-7005.iml
