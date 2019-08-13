@@ -11,6 +11,7 @@
         <module>microservicecloud-api</module>
         <module>microservciecloud-provider-dept-8001</module>
         <module>microservicecloud-consumer-dept-80</module>
+        <module>microservicecloud-eureka-7003</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -100,6 +101,13 @@
                 <version>1.5.19.RELEASE</version>
             </dependency>
             <!--热部署 end-->
+            <!--eureka start-->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-eureka-server</artifactId>
+                <version>1.4.6.RELEASE</version>
+            </dependency>
+            <!--eureka end-->
         </dependencies>
     </dependencyManagement>
 </project>
