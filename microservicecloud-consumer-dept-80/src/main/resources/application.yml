@@ -4,7 +4,5 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:7001/eureka
-  instance:
-    instance-id:  kevinconsumer-80
-    prefer-ip-address: true  #显示ip
+      defaultZone: http://eureka7003.com:7003/eureka/,http://eureka7004.com:7004/eureka/,http://eureka7005.com:7005/eureka/  #集群版
+    register-with-eureka: false  #该微服务是消费端，不向注册中心注册？

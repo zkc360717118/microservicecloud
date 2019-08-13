@@ -14,7 +14,7 @@
 
 # Package Files #
 *.jar
-*.war
+*.war~~
 *.nar
 *.ear
 *.zip
@@ -31,3 +31,5 @@ hs_err_pid*
 /microservicecloud-consumer-dept-80/microservicecloud-consumer-dept-80.iml
 /microservicecloud-eureka-7004/microservicecloud-eureka-7004.iml
 /microservicecloud-eureka-7005/microservicecloud-eureka-7005.iml
+microservicecloud-eureka-7004/target/classes/application.yml
+microservicecloud-eureka-7004/target/generated-sources/

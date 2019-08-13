@@ -14,6 +14,8 @@
         <module>microservicecloud-eureka-7003</module>
         <module>microservicecloud-eureka-7004</module>
         <module>microservicecloud-eureka-7005</module>
+        <module>microservciecloud-provider-dept-8002</module>
+        <module>microservciecloud-provider-dept-8003</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -123,6 +125,11 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-actuator</artifactId>
                 <version>1.5.3.RELEASE</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-ribbon</artifactId>
+                <version>1.2.7.RELEASE</version>
             </dependency>
             <!--eureka end-->
         </dependencies>

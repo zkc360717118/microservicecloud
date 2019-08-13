@@ -13,7 +13,8 @@ import java.util.List;
 public class DeptController_Consumer {
     @Autowired
     private RestTemplate template;
-    private static final String REST_URL_PREFIX ="http://localhost:8001";
+//    private static final String REST_URL_PREFIX ="http://localhost:8001";
+    private static final String REST_URL_PREFIX ="http://MICROSERVICECLOUD-DEPT";
 
     @RequestMapping(value="/consumer/dept/add")
     public boolean add(Dept dept) {
@@ -29,13 +30,7 @@ public class DeptController_Consumer {
 
     @RequestMapping(value="/consumer/dept/list")
     public List<Dept> list() {
-
         return template.getForObject(REST_URL_PREFIX + "/dept/list", List.class);
     }
 
-    //测试@EnableDiscoveryClient ,消费端可以调用服务发现
-    @RequestMapping(value = "/consumer/dept/discovery")
-    public Object discovery() {
-        return template.getForObject(REST_URL_PREFIX + "/dept/discovery", Object.class);
-    }
 }
