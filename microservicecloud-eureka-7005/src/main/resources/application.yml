@@ -1,12 +1,12 @@
 server:
-  port: 7003
+  port: 7005
 eureka:
   instance:
 #    hostname: localhost  #单机
-    hostname: eureka7003.com
+    hostname: eureka7005.com
   client:
     register-with-eureka: false
     fetch-registry: false
     service-url:
 #      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/  #单机
-      defaultZone: http://eureka7004.com:7004/eureka/,http://eureka7005.com:7005/eureka/
+      defaultZone: http://eureka7003.com:7003/eureka/,http://eureka7004.com:7004/eureka/

@@ -1,2 +1,10 @@
 server:
   port: 80
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka
+  instance:
+    instance-id:  kevinconsumer-80
+    prefer-ip-address: true  #显示ip
