@@ -7,4 +7,12 @@ spring:
     config:
       server:
         git:
-          uri: git@github.com:zkc360717118/microservicecloud-config.git
+          uri: https://github.com/zkc360717118/microservicecloud-config.git
+          username: kevin_zkc@126.com
+          password: githubS1103
+      profile: dev
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7003.com:7003/eureka/,http://eureka7004.com:7004/eureka/,http://eureka7005.com:7005/eureka/
